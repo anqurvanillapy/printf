@@ -87,6 +87,6 @@ template <const char *Fmt, auto... Args> constexpr void Printf() {
 }
 
 int main() {
-  Printf<"%s, %d!\n"_lit, "Hello"_lit, 42>();
+  Printf<"%s, %d!\n"_lit, "Hello"_lit, -42>();
   return 0;
 }
